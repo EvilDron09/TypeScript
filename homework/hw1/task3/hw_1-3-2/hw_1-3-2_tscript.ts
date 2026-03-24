@@ -18,7 +18,37 @@
 //             –>
 // за допомогою стилів, побудувати сітку по 2 об’єктах в рядок
 
-let usersList = [
+type Geo32Type ={
+    lat: string,
+    lng: string,
+}
+
+type Address32Type ={
+    street: string,
+    suite: string,
+    city: string,
+    zipcode: string,
+    geo: Geo32Type,
+}
+
+type Company32Type ={
+    name: string,
+    catchPhrase: string,
+    bs: string,
+}
+
+type UsersList32Type = {
+    id: number,
+    name: string,
+    username: string,
+    email: string,
+    address:Address32Type,
+    phone: string,
+    website: string,
+    company: Company32Type,
+}
+
+let usersList32: UsersList32Type[] = [
     {
         id: 1,
         name: 'Leanne Graham',
@@ -252,7 +282,7 @@ let usersList = [
 ];
 
 document.write(`<div class=”users-box” style=" display: grid; grid-template-rows: repeat(5, 1fr); grid-template-columns: repeat(2, 1fr);border: 2px solid black;">`);
-for (const user of usersList) {
+for (const user of usersList32) {
     document.write(`
     <div class=”user-block” style="border: 2px solid black; padding: 10px;">
         <h2>${user.id} - ${user.name} - ${user.username}</h2>

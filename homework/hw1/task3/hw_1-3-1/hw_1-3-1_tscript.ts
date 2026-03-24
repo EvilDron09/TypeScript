@@ -16,7 +16,7 @@ for (let i = 0; i < 10; i++) {
 
 // #uzkt71dp
 // – За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-let i=0;
+let i:number=0;
 while (i<20){
     document.write('<h1>Hello World</h1>');
     i++;
@@ -26,7 +26,7 @@ while (i<20){
 // #OeT7t3uUMFi
 // – За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
-let y =0;
+let y:number =0;
 while (y<20){
     document.write(`<h1>Hello World ${y+1}</h1>`);
     y++;
@@ -49,7 +49,7 @@ while (y<20){
 //     </ul>
 // замість ‘ITEM OF ARRAY’ підставити елемент з масиву, щоб вийшов цілий список з даними з масиву
 
-let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+let listOfItems : string[] = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 document.write(`<ul>`)
 for (const item of listOfItems) {
     document.write(
@@ -91,7 +91,13 @@ document.write(`</ul>`);
 // </div>
 // Замість TITLE PRICE IMAGE – підставити відповідні поля з об’єкту
 
-let products = [
+type ProductsType ={
+    title:string,
+    price:number,
+    image:string,
+}
+
+let products:ProductsType[] = [
     {
         title: 'milk',
         price: 22,
@@ -143,7 +149,13 @@ for (const product of products) {
 //  – користувачів зі статусом false
 //  – користувачів, які старші за 30 років
 
-let users = [
+type Users31Type ={
+    name:string,
+    age:number,
+    status:boolean,
+}
+
+let users31: Users31Type[] = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
@@ -157,19 +169,19 @@ let users = [
     {name: 'max', age: 31, status: true},
 ];
 
-for (const user of users) {
+for (const user of users31) {
     if(user.status){
         console.log(user);
     }
 };
 
-for (const user of users) {
+for (const user of users31) {
     if(!user.status){
         console.log(user);
     }
 };
 
-for (const user of users) {
+for (const user of users31) {
     if(user.age>30){
         console.log(user);
     }
