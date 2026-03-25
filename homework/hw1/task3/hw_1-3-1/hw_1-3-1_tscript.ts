@@ -26,10 +26,10 @@ while (i<20){
 // #OeT7t3uUMFi
 // – За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
-let y:number =0;
-while (y<20){
-    document.write(`<h1>Hello World ${y+1}</h1>`);
-    y++;
+let y13:number =0;
+while (y13<20){
+    document.write(`<h1>Hello World ${y13+1}</h1>`);
+    y13++;
 };
 
 // #vLSZKMlO

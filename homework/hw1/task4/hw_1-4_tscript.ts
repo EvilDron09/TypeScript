@@ -91,14 +91,14 @@ foobarPrimitives([123,true,'vasya',5436])
 // – створити функцію, яка приймає масив об’єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об’єкту окремий блок.
 
 type Users41Type = { id:number, name:string, age:number}
-function users(users:Users41Type[]):void{
+function users14(users:Users41Type[]):void{
     for (const user of users) {
         document.write(`
         <div>${user.id} ${user.name} ${user.age} </div>
         `);
     }
 }
-users([
+users14([
     {id:1, name:'Vasya', age:24},
     {id:2, name:'Vasya', age:24},
     {id:3, name:'Vasya', age:24},

@@ -103,7 +103,7 @@ type CoursesType = {
     monthDuration:number
 }
 
-let coursesAndDurationArray:CoursesType[] = [
+let coursesAndDurationArray161:CoursesType[] = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
     {title: 'Python Complex', monthDuration: 6},
@@ -113,7 +113,7 @@ let coursesAndDurationArray:CoursesType[] = [
 ];
 
 const monthSort:CoursesType[] =
-    coursesAndDurationArray
+    coursesAndDurationArray161
         .sort((a,b) => b.monthDuration-a.monthDuration)
         .filter(value =>value.monthDuration > 5)
         .map( (value, index) =>({id: index + 1, ...value}))

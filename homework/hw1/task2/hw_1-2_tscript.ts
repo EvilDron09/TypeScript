@@ -119,7 +119,7 @@ type UsersType ={
 let user1:UsersType={name: 'Vasya', username: '_Vasya_123', password: '234asd809',};
 let user2:UsersType={name: 'Petya', username: '20_Petya_04', password: 'FE2390OP',};
 let user3:UsersType={name: 'Andrey', username: 'Andrey940', password: 'HErd56iok'};
-const users :UsersType[]=[
+const users12 :UsersType[]=[
     user1,{name: 'Vasya', username: '_Vasya_123', password: '234asd809',
     },
     user2,{name: 'Petya', username: '20_Petya_04', password: 'FE2390OP',
@@ -161,16 +161,16 @@ const users :UsersType[]=[
     //     password: '132PPOIasdc2',
     // },
 ];
-console.log(users[0]);
-console.log(users[1]);
-console.log(users[2]);
-console.log(users[3]);
-console.log(users[4]);
-console.log(users[5]);
-console.log(users[6]);
-console.log(users[7]);
-console.log(users[8]);
-console.log(users[9]);
+console.log(users12[0]);
+console.log(users12[1]);
+console.log(users12[2]);
+console.log(users12[3]);
+console.log(users12[4]);
+console.log(users12[5]);
+console.log(users12[6]);
+console.log(users12[7]);
+console.log(users12[8]);
+console.log(users12[9]);
 
 // #coYydZuaeEB
 // – описати масив, в якому буде зберігатись інформація про температуру вранці, вдень і ввечері за термін в 7 днів. Як зробити цей масив – вам потрібно подумати.

@@ -32,8 +32,8 @@ console.log(q);
 let h:number = 16;
 console.log(h);
 
-let y:boolean =true;
-console.log(y);
+let y11:boolean =true;
+console.log(y11);
 
 let r:boolean = false;
 console.log(r);

@@ -2,7 +2,8 @@
 // – Створити функцію конструктор для об’єктів User з полями id, name, surname , email, phone
 // створити пустий масив, наповнити його 10 об’єктами new User(….)
 // ts-ignore
-class User{
+
+class User71{
 
     id:number;
     name:string;
@@ -17,31 +18,27 @@ constructor(id:number, name:string, surname:string, email:string, phone:string )
     this.phone = phone;
     }
 }
-let users:User[] = [
-    new User(3,'vasya','petrov', 'vpetron543@gmail.com','+380999999999'),
-    new User(5,'petya','stoliarov', 'hhudw23@gmail.com', '+380673229102'),
-    new User(2,'max','petrov', 'ajdkajsdki323@gmail.com', '+38076431212'),
-    new User(4,'olga','pupkina','tjdfgjdo@gmail.com', '+380234556332'),
-    new User(1,'anna','pupkina','shdfikie@gmail.com', '+380765454456'),
-    new User(6, 'nikita','ivanov', 'dasd4321@gmail.com','+380694837342'),
-    new User(7,'andrey', 'ivanov', 'ajsdiji@gmail.com',"+380436534567"),
-    new User(10,'natalia', 'petrova', 'jijiasjai@gmail.com', '+380345245234'),
-    new User(9, 'lena', 'oleinik', 'shfuisiu@gmail.com', '+380645367896'),
-    new User(8, 'tanya', 'petrova', 'gfdgjdio@gmail.com', '+380536738278'),
+
+let users71:User71[] = [
+    new User71(3,'vasya','petrov', 'vpetron543@gmail.com','+380999999999'),
+    new User71(5,'petya','stoliarov', 'hhudw23@gmail.com', '+380673229102'),
+    new User71(2,'max','petrov', 'ajdkajsdki323@gmail.com', '+38076431212'),
+    new User71(4,'olga','pupkina','tjdfgjdo@gmail.com', '+380234556332'),
+    new User71(1,'anna','pupkina','shdfikie@gmail.com', '+380765454456'),
 ]
 
-console.log(users);
+console.log(users71);
 
 // #2ikXsE2WiKZ
 // – Взяти масив з  User[] з попереднього завдання, та відфільтрувати, залишивши тільки об’єкти з парними id (filter)
 
-const filter = users.filter((user)=> user.id %2 ===0);
+const filter = users71.filter((user)=> user.id %2 ===0);
 console.log(filter);
 
 // #pOeHKct
 // – Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 
-const sort = users.sort((user1, user2) => user1.id-user2.id);
+const sort = users71.sort((user1, user2) => user1.id-user2.id);
 console.log(sort);
 
 // #nkMXISv
@@ -222,11 +219,11 @@ console.log(cinderellas.find(cinderella =>cinderella.footSize === prince.slipper
 // *Через Array.prototype. створити власний foreach, filter
 //
 // @ts-ignore
-declare global {
+
     interface Array<T> {
         myFilter(predicate: (value: T) => boolean): T[];
     }
-}
+
 Array.prototype.myFilter = function<T>( predicate: (value: T) => boolean): T[] {
     const result = [];
     for (const item of this) {

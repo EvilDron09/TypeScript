@@ -1,11 +1,11 @@
-let a :string = 'qwe';
-let b :number = 123;
-let c :boolean = true;
+let a1 :string = 'qwe';
+let b1 :number = 123;
+let c1 :boolean = true;
 function foo (arg1:number, arg2:number):number{
     return arg1 + arg2;
 }
-let d :number[] = [];
-d.push(123);
+let d1 :number[] = [];
+d1.push(123);
 
 // type UserType ={
 //     name: string;
@@ -35,7 +35,7 @@ class User {
     }
 }
 
-let users: User[] = [
+let users11: User[] = [
     new User('qwe',12,true)
     // {greeting:(str:string):string => 'hello1',name: 'vasya', age: 31, status: false},
     // {greeting:(str:string):string => 'hello2',name: 'petya', age: 30, status: true},
