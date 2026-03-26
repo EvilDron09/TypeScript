@@ -9,13 +9,13 @@
 //
 // let p:HTMLParagraphElement = document.createElement('p');
 
-type Users21Type ={
+type Usersl21Type ={
     name:string,
     age:number,
     status:boolean,
 }
 
-let users21: Users21Type[] = [
+let usersl21: Usersl21Type[] = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
@@ -29,7 +29,7 @@ let users21: Users21Type[] = [
     {name: 'max', age: 31, status: true},
 ];
 
-for (const user of users21) {
+for (const user of usersl21) {
     let div: HTMLDivElement = document.createElement('div');
     div.innerText = user.name;
     document.body.appendChild(div);
