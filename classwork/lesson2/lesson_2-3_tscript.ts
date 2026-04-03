@@ -9,7 +9,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         console.log(users[0].name);
     });
 
-async function foobar(){
+async function foobar23(){
     let users: IUsers[] = await fetch('https://jsonplaceholder.typicode.com/users')
         .then((response:Response) => response.json());
 
